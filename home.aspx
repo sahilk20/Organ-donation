@@ -1,63 +1,114 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/home.master" AutoEventWireup="true" CodeFile="home.aspx.cs" Inherits="home" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/admin/admin.master" AutoEventWireup="true" CodeFile="home.aspx.cs" Inherits="admin_home" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .auto-style1 {
+            color: #0066FF;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <img src="images/homeslide2.jpg" width="100%" />
+    <br />
+    <br />
+   <center> <h1 class="auto-style1"><strong>Dashboard</strong></h1></center>
 
-    <section class="service-section spad">
-		<div class="container services">
-			<div class="section-title text-center">
-				<h3>OUR SERVICES</h3>
-				<p>We provides the opportunity to prepare for life</p>
-			</div>
-			<div class="row">
+    <br />
+    <br />
 
-				<div class="col-lg-4 col-sm-6 service-item">
-					<div class="service-icon">
-						<img src="img/services-icons/2.png" alt="1" />
-					</div>
-					<div class="service-content">
-						<h4>Matching Donors with Recipients</h4>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 service-item">
-					<div class="service-icon">
-						<img src="img/services-icons/3.png" alt="1" />
-					</div>
-					<div class="service-content">
-						<h4>Activity Hub</h4>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 service-item">
-					<div class="service-icon">
-						<img src="img/services-icons/4.png" alt="1" />
-					</div>
-					<div class="service-content">
-						<h4>Health Care</h4>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 service-item">
-					<div class="service-icon">
-						<img src="img/services-icons/5.png" alt="1" />
-					</div>
-					<div class="service-content">
-						<h4>Getting an Organ Transplant</h4>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 service-item">
-					<div class="service-icon">
-						<img src="img/services-icons/6.png" alt="1" />
-					</div>
-					<div class="service-content">
-						<h4>
-The Living Donation Process</h4>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                 <div class="container">
+				<div class="row">
+					<div class="col-md-12 col-md-push-2">
+
+    <div class="row">
+
+                 <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="alert alert-info back-widget-set text-center">
+                            <i class="fa fa-book fa-5x"></i>
+
+
+                            <h3><asp:Label runat="server" ID="Label1"></asp:Label> </h3>
+                           Total Donations
+                        </div>
+                    </div>
+  
+                 <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="alert alert-info back-widget-set text-center">
+                            <i class="fa fa-list fa-5x"></i>
+
+
+                            <h3><asp:Label runat="server" ID="Label2"></asp:Label> </h3>
+                           Availabe organs
+                        </div>
+                    </div>
+             
+               <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="alert alert-warning back-widget-set text-center">
+                            <i class="fa fa-recycle fa-5x"></i>
+
+
+                            <h3><asp:Label runat="server" ID="Label3"></asp:Label></h3>
+                          Transplated Organs
+                        </div>
+                    </div>
+
+               <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="alert alert-danger back-widget-set text-center">
+                            <i class="fa fa-users fa-5x"></i>
+
+                            <h3><asp:Label runat="server" ID="Label4"></asp:Label></h3>
+                           Total Requests
+                        </div>
+                    </div>
+
+        </div>
+
+
+
+ <div class="row">
+
+     <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="alert alert-secondary back-widget-set text-center">
+                            <i class="fa fa-refresh fa-5x"></i>
+
+
+
+                            <h3><asp:Label runat="server" ID="Label5"></asp:Label></h3>
+                      Pending request
+                        </div>
+                    </div>
+
+     <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="alert alert-secondary back-widget-set text-center">
+                            <i class="fa fa-check fa-5x"></i>
+
+
+
+                            <h3><asp:Label runat="server" ID="Label6"></asp:Label></h3>
+                      Approved request
+                        </div>
+                    </div>
+
+ <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="alert alert-secondary back-widget-set text-center">
+                            <i class="fa fa-user fa-5x"></i>
+
+
+
+                            <h3><asp:Label runat="server" ID="Label7"></asp:Label></h3>
+                      Registered Users
+                        </div>
+                    </div>
+             
+
+        </div> 
+
+                        </div>
+                    </div>
+                     </div>
+
+    <br />
+    <br />
 
 </asp:Content>
 
